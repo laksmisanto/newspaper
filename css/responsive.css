@@ -1,0 +1,54 @@
+/*! 'sx' returns only a ruleset and no media query */
+
+@media (max-width: 575px) {
+  .navbar-toggler,
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: none;
+  }
+  .large__overlay__news__item .news__title {
+    font-size: 16px;
+  }
+  .mediam__overlay__news__item .news__title {
+    font-size: 14px;
+  }
+  .mediam__news__item .news__title {
+    font-size: 14px;
+  }
+  .news__header {
+    font-size: 18px;
+  }
+  .small__news__item .news__title {
+    font-size: 14px;
+  }
+  ul.politics__menu li a {
+    font-size: 14px;
+    padding: 4px;
+    margin: 0 2px;
+  }
+  ul.politics__menu {
+    justify-content: start;
+  }
+}
+/*! 'sm' applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /** portrait phones */
+}
+/*! 'md' applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /** landscape phones */
+}
+/*! 'lg' applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /** tablets */
+}
+/*! 'xl' applies to large devices (desktop, less than 1200px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /** desktop */
+}
+/*! 'xxl' applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+  /** large desktops */
+}

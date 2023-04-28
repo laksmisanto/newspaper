@@ -1,0 +1,384 @@
+/*=============================== 
+Common Css part start 
+
+ctrl+alt+click_the_left_side_title_icon__colaps_this_section.
+===============================*/
+
+/* common theme css part start */
+
+:root {
+  --primary-font: "Hind Siliguri", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --main-bg: #ecf0f3;
+  --secondary-bg: #fff;
+  --nav-bg: #124b65;
+  --overlay-bg-color: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  --nav-color: #fff;
+  --text-color: #303136;
+  --title-color: #222;
+  --subtitle-color: #606060;
+  --overlay-text-color: #fff;
+  --hover-color: #3185f9;
+  --mute-color: #394030;
+  --shadow: inset 0 4px 8px #babcba;
+  --nav-font-size: 17px;
+  --fs-news-item: 18px;
+  --fs-news-item-lg: 22px;
+  --fs-news-item-xlg: 28px;
+  --fs-header: 24px;
+  --fs-footer-item: 14px;
+}
+body.dark__theme {
+  --main-bg: #131419;
+  --text-color: #e8e8e8;
+  --bg: #07080d;
+  --mute-color: #888;
+  --shadow: inset 0 4px 8px #07080d;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+body {
+  background: var(--main-bg);
+}
+.news__title {
+  font-family: var(--primary-font);
+  line-height: 128%;
+}
+.news__header {
+  font-family: var(--primary-font);
+  font-size: var(--fs-header);
+  color: var(--title-color);
+}
+.news__header__container {
+  padding: 8px 0;
+  border-bottom: 2px solid var(--nav-bg);
+}
+/*=============================== 
+Common Css part end 
+===============================*/
+
+/*=============================== 
+navbar css part start 
+===============================*/
+nav.navbar {
+  background: var(--nav-bg);
+}
+.navbar-nav .nav-link {
+  font-family: var(--primary-font);
+  font-size: var(--nav-font-size);
+  color: var(--nav-color);
+  transition: all 0.3s linear;
+  position: relative;
+}
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+.navbar-nav .nav-link:hover::before {
+  background: #fff;
+  width: 100%;
+}
+.navbar-nav .nav-link:hover {
+  background: rgba(221, 221, 221, 0.39);
+}
+/*=============================== 
+navbar css part end 
+===============================*/
+
+/*=============================== 
+ main news container css part start 
+===============================*/
+.large__overlay__news__item {
+  width: 100%;
+  position: relative;
+}
+.large__overlay__news__item .news__title {
+  font-size: var(--fs-news-item-xlg);
+  width: 100%;
+  position: absolute;
+  color: var(--overlay-text-color);
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  background: var(--overlay-bg-color);
+}
+.mediam__news__item .news__title {
+  font-size: var(--fs-news-item);
+  padding: 8px 0;
+}
+.small__news__item {
+  width: 100%;
+}
+.small__news__item .news__img {
+  width: 30%;
+}
+.small__news__item .news__title {
+  font-size: var(--fs-news-item);
+  width: 70%;
+  padding-left: 10px;
+}
+.mediam__overlay__news__item {
+  width: 100%;
+  position: relative;
+}
+.mediam__overlay__news__item .news__title {
+  width: 100%;
+  position: absolute;
+  color: var(--overlay-text-color);
+  font-size: var(--fs-news-item);
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  background: var(--overlay-bg-color);
+}
+/*=============================== 
+ main news container css part  end 
+===============================*/
+
+/*=============================== 
+ district news container css part  start 
+===============================*/
+.find__news select,
+.find__news option,
+.find__news button {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--text-color);
+}
+.find__news button {
+  color: #fff;
+}
+/*=============================== 
+ district news container css part  end 
+===============================*/
+
+/*=============================== 
+ politics news container css part  start 
+===============================*/
+ul.politics__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+ul.politics__menu li a {
+  display: block;
+  padding: 8px;
+  font-family: var(--primary-font);
+  font-size: var(--nav-font-size);
+  color: var(--text-color);
+  margin: 0 4px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+ul.politics__menu li a:hover {
+  color: var(--nav-bg);
+  background: rgba(18, 75, 101, 0.1);
+}
+ul.politics__menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 0.3s linear;
+}
+ul.politics__menu li a:hover:before {
+  background: var(--nav-bg);
+  width: 100%;
+}
+/*=============================== 
+ politics news container css part  end 
+===============================*/
+
+/*=============================== 
+ footer section css part  start 
+===============================*/
+#footer {
+  background: var(--nav-bg);
+  color: var(--nav-color);
+}
+.footer__item__container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 8px;
+}
+.footer__item__container::after {
+  content: "";
+  left: 0;
+  bottom: -4px;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background: var(--nav-color);
+}
+.footer__item__container::before {
+  content: "";
+  left: 0;
+  bottom: -12px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--nav-color);
+}
+.footer__about__us h6 {
+  font-family: var(--primary-font);
+  font-size: var(--fs-footer-item);
+  color: var(--nav-color);
+  padding: 4px 0;
+}
+.phone,
+.email,
+.location {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: 8px 0;
+}
+.phone__icon,
+.email__icon,
+.location__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #022b2e;
+  font-size: 12px;
+  box-shadow: 0 2px 4px #011d1f, 0 -2px 4px #09656b;
+}
+
+.phone__number,
+.email__address,
+.location__address {
+  font-family: var(--primary-font);
+  font-size: var(--fs-footer-item);
+  color: var(--nav-color);
+}
+
+.footer__menu li a {
+  font-family: var(--primary-font);
+  font-size: var(--fs-footer-item);
+  color: var(--nav-color);
+  display: block;
+  padding: 4px 0;
+}
+.social__link {
+  display: flex;
+}
+.social__link li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background: #022b2e;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 2px 4px #011d1f, 0 -2px 4px #09656b;
+  margin: 0 4px;
+}
+
+.input__form__group {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.input__form__group input,
+.input__form__group button {
+  font-family: var(--primary-font);
+  font-size: var(--fs-footer-item);
+  border: none;
+  outline: none;
+}
+.input__form__group input {
+  width: 100%;
+  color: var(--text-color);
+  padding-left: 14px;
+  padding-right: 4px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  /* box-shadow: 0 2px 4px #011d1f, 0 -2px 4px #09656b; */
+}
+.input__form__group button {
+  padding: 8px 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background: #09656b;
+  color: var(--nav-color);
+  /* box-shadow: 0 2px 4px #011d1f, 0 -2px 4px #09656b; */
+}
+/*=============================== 
+ footer section css part  end 
+===============================*/
+
+/* :root {
+  --brand-color: #124B65;
+  --brand-color-ed: #124B65C7;
+  --brand-color-ad: #124B657D;
+  --brand-color-alpha: #124B65d8;
+  --brand-grid-color: #124B65;
+  --brand-light-color: #124B65;
+  --brand-object-color: #FFF;
+  --brand-hover-color: #26566c;
+  --brand-text-color: #000;
+  --link-hover-color: #124B65;
+  --text-color: black;
+  --subtitle-color: #3e3e3e;
+  --black-color: black;
+  --border-color: #e0e0e0;
+  --border-color-light: #eeeeee;
+  --nav-font-size: 17px;
+  --heading-two-text-background: #0d374c;
+  --heading-two-background: #2d2d2d;
+  --slg-color: #000000;
+  --slg-color-ed: #000000c7;
+  --slg-color-ad: #0000007d;
+  --font-size-list-item: 18px;
+  --font-size-1299: 17px;
+  --font-size-991: 16px;
+  --font-size-767: 14px;
+  --font-size-list-item-xl: 23px;
+  --font-size-xl-1299: 19px;
+  --font-size-xl-991: 17px;
+  --font-size-xl-767: 15px;
+  --font-size-list-item-first: 22px;
+  --font-size-first-1299: 19px;
+  --font-size-first-991: 18px;
+  --font-size-first-767: 16px;
+  --font-size-lead: 36px;
+  --font-size-lead-1299: 33px;
+  --font-size-lead-991: 31px;
+  --font-size-lead-767: 25px;
+} */
